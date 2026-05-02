@@ -1,0 +1,12 @@
+*.o
+*/main-py/
+*/main-rust/
+gatekeeper/gatekeeper/main-py/
+gatekeeper/gatekeeper/main-rust/
+*/bin/*
+*/mount-point/*
+*/build/
+__pycache__/
+*.prof
+*/gatekeeper-opt/*
+*/files*/*

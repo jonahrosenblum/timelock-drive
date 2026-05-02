@@ -1,0 +1,7 @@
+# To use a RAM disk created by setup_ramdisk.sh, set:
+#   disk_path = "/dev/ram0"
+#
+# To use a physical disk, set, e.g.:
+#   disk_path = "/dev/sdb"
+
+disk_path = "/dev/ram0"
