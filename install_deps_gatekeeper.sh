@@ -141,9 +141,9 @@ else
     info "Installing Rust (stable) for ${SUDO_USER} via rustup..."
     apt-get install -y curl
 
-    TMPDIR_RUSTUP="$(mktemp -d)"
-    curl -fsSL https://sh.rustup.rs -o "${TMPDIR_RUSTUP}/rustup-init.sh"
-    chmod +x "${TMPDIR_RUSTUP}/rustup-init.sh"
+    TMPDIR_RUSTUP="$(as_user mktemp -d)"
+    as_user curl -fsSL https://sh.rustup.rs -o "${TMPDIR_RUSTUP}/rustup-init.sh"
+    as_user chmod +x "${TMPDIR_RUSTUP}/rustup-init.sh"
 
     as_user sh "${TMPDIR_RUSTUP}/rustup-init.sh" \
         --no-modify-path \
