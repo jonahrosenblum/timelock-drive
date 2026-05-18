@@ -3,8 +3,10 @@
 An implementation of the timelock storage system. The **gatekeeper** (Dafny →
 Rust) enforces the timelock policies on the disk; the **versioning driver**
 (C / bdus) exposes a versioned virtual block device and manages versions in a timelock-respecting manner.
+This artifact accompanies the paper "Timelock Drive: Isolated Time-Based Defense for Storage Systems," OSDI 2026.
 
----
+## Build Dependencies
+This artifact uses the BDUS framework. The authors have tested that the framework works with Ubuntu 20.04 and note that it may not build on newer distros (22.04 and 24.04).
 
 ## WARNING
 This prototype interacts with storage devices. Unless you know what you are doing/contact the authors
